@@ -1,0 +1,33 @@
+%YAML 1.1
+---
+action_factory: null
+action_names:
+- utter_default
+- utter_restart
+- utter_greet
+- utter_goodbye
+actions:
+- utter_default
+- utter_restart
+- utter_greet
+- utter_goodbye
+config:
+  store_entities_as_slots: true
+entities: []
+intents:
+- out_of_scope:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+slots: {}
+templates:
+  utter_default:
+  - text: "Não entendi, oq você disse?\n"
+  utter_goodbye:
+  - text: Tchau migo, até mais!
+  utter_greet:
+  - text: "Oi migo! Tudo bom?\n"
+  utter_restart:
+  - text: "Reiniciando :)\n"

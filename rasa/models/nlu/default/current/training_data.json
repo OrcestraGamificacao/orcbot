@@ -1,0 +1,136 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "out_of_scope",
+        "text": "que"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "cade o estacionamento"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "to com frio"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "to com calor"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "cool"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "massa"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "sou abraçudo"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "preciso tirar SS"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "preciso passar na prova"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "ser ou não ser, cadê o bifão"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "última"
+      },
+      {
+        "intent": "greet",
+        "text": "Oi"
+      },
+      {
+        "intent": "greet",
+        "text": "Olá"
+      },
+      {
+        "intent": "greet",
+        "text": "Iae"
+      },
+      {
+        "intent": "greet",
+        "text": "Fala meu compatriota"
+      },
+      {
+        "intent": "greet",
+        "text": "KKK eae man"
+      },
+      {
+        "intent": "greet",
+        "text": "Olar"
+      },
+      {
+        "intent": "greet",
+        "text": "Tudo bão?"
+      },
+      {
+        "intent": "greet",
+        "text": "Fala migx"
+      },
+      {
+        "intent": "greet",
+        "text": "Oi migx"
+      },
+      {
+        "intent": "greet",
+        "text": "Eae parça"
+      },
+      {
+        "intent": "greet",
+        "text": "yo"
+      },
+      {
+        "intent": "greet",
+        "text": "Oi Lino"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Tchau"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Até mais"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Tchau migx"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Smell ya later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Te vejo mais tarde"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Volto depois"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Tchau, obrigado"
+      },
+      {
+        "intent": "goodbye",
+        "text": "vlw flw"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}

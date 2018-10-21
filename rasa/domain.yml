@@ -1,0 +1,24 @@
+intents:
+  - out_of_scope
+  - greet
+  - goodbye
+
+actions:
+  - utter_default
+  - utter_restart
+  - utter_greet
+  - utter_goodbye
+
+templates:
+  utter_default:
+    - text: |
+        Não entendi, oq você disse?
+  utter_restart:
+    - text: |
+        Reiniciando :)
+  utter_greet:
+    - text: |
+        Oi migo! Tudo bom?
+  utter_goodbye:
+    - text: |
+        Tchau migo, até mais!
