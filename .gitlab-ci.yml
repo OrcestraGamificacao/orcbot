@@ -1,0 +1,29 @@
+stages:
+  - test
+  - build
+
+variables:
+  ORC_LATEST_IMAGE: $DOCKER_USER/orcbot:latest
+
+test_flake8:
+  image: python:3.6
+  stage: test
+  before_script:
+    - pip install flake8
+  script:
+    - flake8 .
+
+build orcbot:
+  image: docker:latest
+  stage: build
+  services:
+    - docker:dind
+  script:
+    - docker build -t $ORC_LATEST_IMAGE -f docker/Local.Dockerfile .
+    - docker login -u $DOCKER_USER -p $DOCKER_PASS
+    - docker push $ORC_LATEST_IMAGE
+  only:
+    - /master/
+    - /SetEnvironment/
+  environment: production
+
