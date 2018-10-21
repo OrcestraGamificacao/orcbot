@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  orcbot:
+    build:
+      context: .
+      dockerfile: docker/Local.Dockerfile
+    container_name: orcbot
+    volumes:
+      - ./:/orcbot
+    tty: true
+    stdin_open: true
