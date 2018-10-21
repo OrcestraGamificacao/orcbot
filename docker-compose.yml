@@ -4,9 +4,13 @@ services:
   orcbot:
     build:
       context: .
-      dockerfile: docker/Local.Dockerfile
+      dockerfile: docker/Telegram.Dockerfile
     container_name: orcbot
     volumes:
       - ./:/orcbot
+    ports:
+      - 5002:5002
+    environment:
+      - TRAINING_EPOCHS=200
     tty: true
     stdin_open: true
